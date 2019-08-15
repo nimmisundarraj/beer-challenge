@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="beerApp" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./lib/bootstrap.min.css">
+  <link rel="stylesheet" href="./client/app.css">
+</head>
+<body>
+
+<div class="container-fluid py-4" ng-controller="BeerController">
+  <form>
+    <div class="row">
+      <div class="col">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <header id="header" class="info form-group">
+              <h2> Beer Section </h2>
+            </header>
+            <div class="default-beer">
+              <h5>{{beer.name}}</h5>
+              <div class="beer-container">
+                <img src="{{beer.image_url}}" />
+                <div class="beer-data">
+                  <p>{{beer.description}}</p>
+                </div>
+                <div class="button-group">
+                  <button type="button" class="btn btn-primary" ng-click="getRandomBeer()">Change Beer</button>
+                  <button type="button" class="btn btn-primary" ng-click="getRandomBeer('non')">Random Non Alcoholic Beer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-10">
+            <div class="beer-search">
+              <nav class="navbar navbar-light bg-light justify-content-between">
+                <form class="form-inline">
+                  <div class="form-groups has-error">
+                    <input class="form-control mr-sm-2" ng-model="name" type="search" placeholder="Search" aria-label="Search">
+                    <span class="help-block" ng-if="validate(name)">* Please enter valid text</span>
+                  </div>
+                  <div class="radio-group">
+                    <label class="radio-inline" ng-repeat="label in searchBy.labels">
+                      <input type="radio" class="{{label}}" ng-model="searchBy.selected" value="{{label}}">
+                      {{label}}
+                    </label>
+                  </div>
+                  <button class="btn btn-outline-success search my-2 my-sm-0" type="submit" ng-click="search(name)" ng-disabled="validate(name) || !name">Search</button>
+                </form>
+              </nav>
+              <div class="search-section">
+                <header id="search-header" class="info form-group" ng-if="enableListing">
+                  <h5> Search Results </h5>
+                </header>
+                <div class="search-results">
+                  <div class="col-lg-12 p-0" ng-repeat="item in beerLists" ng-if="beerLists.length">
+                    <div class="search-container">
+                      <img src="{{item.image_url}}" />
+                      <div class="data">
+                        <h6>{{item.name}}</h6>
+                        <p>{{item.description}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="no-data" ng-if="!beerLists.length">
+                    <h3>{{enableListing ? 'No Results Found' : 'Please do a search for beer listing'}}</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.1/angular.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/numeral.js/1.4.5/numeral.min.js"></script>
+<script src="./client/app.js"></script>
+</body>
+</html>
