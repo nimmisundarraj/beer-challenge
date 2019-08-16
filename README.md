@@ -2,15 +2,15 @@
 Is an initial web page for beer e-commerce. You can find the default beer which is randomly chosen and allowed to change as prior, also facilitate to chose the non-alcoholic beer. User can also search for the beer by its name or description.
 
 ### Languages used:
- ** Client **
+**Client**
  - HTML
  - CSS
  - AngularJS(1.3)
 
- ** Server **
+** Server **
  - NodeJS
 
- ** Automation **
+** Automation **
  - Protractor (automation)
 
 ### Setup:
