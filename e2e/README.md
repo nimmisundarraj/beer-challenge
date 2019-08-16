@@ -28,5 +28,5 @@ protractor conf.js
 **View Test Report:**
 Ensure that you have the directory with all access permitted in /var/reports/e2e, or else you could change the path in conf.js.
 
-![alt text](../img/server_test.png)
-![alt text](../img/client_test.png)
+![alt text](../img/server.png)
+![alt text](../img/client.png)
