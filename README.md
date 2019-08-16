@@ -6,11 +6,9 @@ Is an initial web page for beer e-commerce. You can find the default beer which 
  - HTML
  - CSS
  - AngularJS(1.3)
-
-** Server **
+**Server**
  - NodeJS
-
-** Automation **
+**Automation**
  - Protractor (automation)
 
 ### Setup:
