@@ -16,7 +16,7 @@ describe('Beer shop UI test cases - 01', () => {
 
     describe('Header section', () => {
       it('Ensure section header is present', () => {
-        expect($('#header h2').getAttribute('innerText')).toMatch('BEER SECTION');
+        expect($('#header h2').getAttribute('innerText')).toMatch('BEER SHOP');
       })
     })
 
@@ -128,7 +128,7 @@ describe('Beer shop UI test cases - 01', () => {
         $$('.navbar input').get(0).clear().sendKeys('dkjvdjvdf').then(() => {
           $('.Name').click().then(() => {
             $('.btn-outline-success').click().then(() => {
-              expect($('.no-data h3').getAttribute('innerText')).toContain('No Results Found');
+              expect($('.no-data h3').getAttribute('innerText')).toContain('No Results Found')
             })
           })
         })

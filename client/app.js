@@ -17,8 +17,8 @@ angular.module('beerApp', [])
     $scope.getRandomBeer = non => {  // random beer
       api.getRandomBeer(non).then(res => {
         if (res.status == 200) {
-          if (res.data.length) {
-            $scope.beer = non ? res.data[(Math.random() * (res.data.length)) ^ 1] : res.data[0]
+          if (res.data) {
+            $scope.beer = res.data
           } else {
             $scope.helpText = NoData
           }
@@ -37,9 +37,8 @@ angular.module('beerApp', [])
       $scope.enableListing = true
       api.getBeerList(key, $scope.searchBy.selected).then(res => {
         if (res.status == 200) {
-          if (res.data.length) {
-            $scope.beerLists = res.data
-          } else {
+          $scope.beerLists = res.data
+          if (res.data.length < 1) {
             $scope.helpText = NoData
           }
         }

@@ -6,7 +6,7 @@
 var htmlReporter = require('protractor-jasmine2-html-reporter');
 
 exports.config = {
-  specs: ['test/server.js', 'test/client.js'],
+  specs: ['test/server.js', 'test/client.js', 'test/utils_test.js'],
   framework: 'jasmine2',
   type: 'node',
   directConnect: true,
