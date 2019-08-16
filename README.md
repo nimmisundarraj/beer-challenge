@@ -12,4 +12,4 @@ Is the web page where beer listing is available, you can search or choose beers.
   node server
 </pre>
 
-### E2E automated testing is done using Protractor, you can check e2e directory for more info.
+E2E automated testing is done using **protractor**, you can check e2e directory for more info.
