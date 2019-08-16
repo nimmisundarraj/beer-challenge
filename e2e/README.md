@@ -1,10 +1,10 @@
-# Automated Tests using Protractor
+# Automated Tests using Protractor (Server / Client)
 
 Protractor is an end-to-end test framework for Angular and AngularJS applications.
 It is a Node.js program built on top of WebDriverJS.
 It runs tests against your application running in a real browser, interacting with it as a user would.
 
-## Initial Set up:
+### Initial Set up:
 
 Install protractor globally using npm:
 <pre>
@@ -16,16 +16,15 @@ Update webdriver-manager using:
 webdriver-manager update // My local have version 12.0.6
 </pre>
 
-## Getting started:
-To install all the nodejs dependencies, run
+### Set up:
 <pre>
 npm install
 </pre>
 
-## Run Test case:
+### Run Test case:
 <pre>
 protractor conf.js
 </pre>
 
-## View Test Report:
+**View Test Report:**
 Ensure that you have the directory with all access permitted in /var/reports/e2e, or else you could change the path in conf.js.
