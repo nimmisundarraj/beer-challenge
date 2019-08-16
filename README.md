@@ -5,7 +5,7 @@ Is an initial web page for beer e-commerce. You can find the default beer which 
  **Client**
    - HTML
    - CSS
-   - AngularJS(1.3)
+   - AngularJS (1.3)
 
  **Server**
    - NodeJS
