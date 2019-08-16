@@ -4,8 +4,7 @@ Protractor is an end-to-end test framework for Angular and AngularJS application
 It is a Node.js program built on top of WebDriverJS.
 It runs tests against your application running in a real browser, interacting with it as a user would.
 
-### Initial Set up:
-
+### Set up:
 Install protractor globally using npm:
 <pre>
 npm install -g protractor // My local have version 5.3.0
