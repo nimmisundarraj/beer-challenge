@@ -1,5 +1,5 @@
 # BEER SHOP
-Is a simple web page for beer e-commerce start up page. You can find the default beer which is randomly chosen and allowed to change as per prior, also facilitate to chose the non-alcoholic beer. User can also search for the beer by its name or description.
+Is an initial web page for beer e-commerce. You can find the default beer which is randomly chosen and allowed to change as per prior, also facilitate to chose the non-alcoholic beer. User can also search for the beer by its name or description.
 
 ### Setup:
 <pre>
