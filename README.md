@@ -1,5 +1,5 @@
 # BEER SHOP
-Is an initial web page for beer e-commerce. You can find the default beer which is randomly chosen and allowed to change as prior, also facilitate to chose the non-alcoholic beer. User can also search for the beer by its name or description.
+Is an initial web page for beer e-commerce. You can find the default beer which is randomly chosen and allowed to change, also facilitate to chose the non-alcoholic beer. User can also search for the beer by its name or description.
 
 ### Languages used:
  **Client**
@@ -14,7 +14,7 @@ Is an initial web page for beer e-commerce. You can find the default beer which 
    - Protractor (automation)
 ### Setup:
 <pre>
-  Make sure that you have node installed, else install node as prior.
+  Install node if you haven't.
   npm install  #install node modules
 </pre>
 
@@ -25,4 +25,4 @@ Is an initial web page for beer e-commerce. You can find the default beer which 
 
 ![alt text](./img/home.png)
 
-E2E automated testing, you can check e2e directory for more info.
+E2E automated testing, you can check [e2e](https://github.com/nimmisundarraj/beer-challenge/tree/master/e2e){:target="_blank"} directory for more info.
