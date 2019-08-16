@@ -25,4 +25,4 @@ Is an initial web page for beer e-commerce. You can find the default beer which 
 
 ![alt text](./img/home.png)
 
-E2E automated testing, you can check [e2e](https://github.com/nimmisundarraj/beer-challenge/tree/master/e2e) directory for more info.
+E2E automated testing, you can check [e2e directory](https://github.com/nimmisundarraj/beer-challenge/tree/master/e2e) for more info.
