@@ -12,4 +12,6 @@ Is an initial web page for beer e-commerce. You can find the default beer which 
   node server
 </pre>
 
+![alt text](./img/home.png)
+
 E2E automated testing is done using **protractor**, you can check e2e directory for more info.
