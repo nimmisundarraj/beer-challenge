@@ -4,7 +4,7 @@
  * @author Nimmi
  */
 
-describe('Beer shop test cases - 01', () => {
+describe('Beer shop UI test cases - 01', () => {
 
   describe('Login', () => {
     it('Ensure the url is up', () => {
@@ -134,13 +134,5 @@ describe('Beer shop test cases - 01', () => {
         })
       })
     })
-
-    describe('Output the code coverage objects', function() {
-      it('should output the coverage object.', function() {
-        browser.driver.executeScript("return __coverage__;").then(function(val) {
-          console.log('coverage', JSON.stringify(val));
-        });
-      });
-    });
   })
 })
